@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/522288185646434760/57260b27beb94c5994c402a7929d860e/artifacts
+end_time: 1738910196948
+entry_point_name: ''
+experiment_id: '522288185646434760'
+lifecycle_stage: active
+run_id: 57260b27beb94c5994c402a7929d860e
+run_name: mlops
+run_uuid: 57260b27beb94c5994c402a7929d860e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738910191953
+status: 3
+tags: []
+user_id: Suyash

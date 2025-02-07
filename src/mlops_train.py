@@ -95,13 +95,14 @@ def train_and_evaluate(config_path):
 
         # model_path = config["model_path"]
         # joblib.dump(lr, model_path)
-        if os.path.isfile(model_dir):  # Check if a file with the same name exists
-            os.remove(model_dir)  # Delete the file
+        model_dir = os.path.dirname(model_dir)
 
-        if not os.path.exists(model_dir):  # Now safely create the directory
-            os.makedirs(model_dir, exist_ok=True)
-            model_path = os.path.join(model_dir, "model.joblib")
-            joblib.dump(lr, model_path)
+        if not os.path.exists(model_dir):
+            os.makedirs(model_dir)
+
+        # Save the model in the directory
+        model_path = os.path.join(model_dir, "model.joblib")
+        joblib.dump(lr, model_path)
 
 
 if __name__=="__main__":
