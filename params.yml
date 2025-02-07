@@ -18,7 +18,7 @@ estimator:
   ElasticNet:
     params:
       alpha: 0.9
-      l1_ratio: 0.5
+      l1_ratio: 0.1
 
 model_path : models/models.joblib
 
